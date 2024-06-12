@@ -26,10 +26,13 @@ function App() {
       </header>
       <div>
       Projects done:
-
+      </div>
+      <div>
 CSharp 
 Console projects i made while learning C#. I'm revisiting them and adding new things as i learn more about the language.
+</div>
 
+<div style={{padding: '3px', display:'flex', flex: 1, flexDirection: 'row'}}>
 {consoleProjects.map((project, index) => {
   return (
     <ProjectCard project={project}></ProjectCard>
@@ -37,7 +40,7 @@ Console projects i made while learning C#. I'm revisiting them and adding new th
 })}
       </div>
 
-      <div>
+      <div style={{padding: '3px', display:'flex', flex: 1, flexDirection: 'row'}}>
       {angularProjects.map((project, index) => {
   return (
     <ProjectCard project={project}></ProjectCard>
@@ -45,7 +48,7 @@ Console projects i made while learning C#. I'm revisiting them and adding new th
 })}
       </div>
 
-      <div>
+      <div style={{padding: '3px', display:'flex', flex: 1, flexDirection: 'row'}}> 
       {reactProjects.map((project, index) => {
   return (
     <ProjectCard project={project}></ProjectCard>

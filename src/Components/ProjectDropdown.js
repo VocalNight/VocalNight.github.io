@@ -1,4 +1,4 @@
-export default function ProjectCard({stack}) {
+export default function ProjectDropdown({stack}) {
 
     return(
         <></>

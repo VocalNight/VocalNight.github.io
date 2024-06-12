@@ -1,4 +1,4 @@
-export let reactProject = [
+export let reactProjects = [
     {
         title: "Shopping List",
         description: "Small project in react to practice tables, database with back-end in C# and a bit of front end."

@@ -1,17 +1,17 @@
-export default function ProjectCard({ Title, Description, image, link }) {
+export default function ProjectCard({ project }) {
 
     return (
         <>
             <div>
-                <a href={link}>
+                <a href={project.link}>
                     <div>
-                        {image}
+                        {project.image}
                     </div>
                     <div>
-                        {Title}
+                        {project.title}
                     </div>
                     <div>
-                        {Description}
+                        {project.description}
                     </div>
                 </a>
             </div>

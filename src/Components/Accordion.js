@@ -7,10 +7,10 @@ export default function Accordion({ title, projects }) {
 
   return (
     <>
-      <div className='accordion border-solid border-2 m-2 border-black size-52 shadow-md'>
-        <div className='accordion-item' 
+      <div className='accordion'>
+        <div className='accordion-item mx-2' 
         onClick={() => setIsActive(!isActive)}>
-          <div className='accordion-title'>
+          <div className='accordion-title border-solid border-2 border-black mx-2 shadow-md'>
             <div>{title}</div>
             <div>{isActive ? '-' : '+'}</div>
           </div>

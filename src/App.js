@@ -9,15 +9,15 @@ function App() {
 
   return (
     <div className="App" >
-      <nav style={{ display: 'flex', flex: 1 }}>
+      <nav style={{ display: 'flex', flex: 1, justifyContent: 'space-evenly' }}>
         <a href='https://github.com/VocalNight'>Github</a>
         <a href='#projects'>My Work</a>
-        Contact
-        Download Resume
+        <a href=''>Contact</a>
+        <a href=''>Download Resume</a>
       </nav>
       <header className="App-header">
 
-        Hi i'm Victor, i program things and fix bugs.
+        Hi i'm Victor, i'm a self-taught developer. I like programming things and fixing bugs.
         I'm used to both front-end and back end, but really enjoy the back end side of things in systems.
       </header>
 

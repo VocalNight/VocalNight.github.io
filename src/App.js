@@ -1,4 +1,5 @@
 import './App.css';
+import cv from './cv.pdf'
 import { consoleProjects } from './Projects/ConsoleProjects';
 import { angularProjects } from './Projects/AngularProjects';
 import { reactProjects } from './Projects/ReactProjects';
@@ -9,18 +10,32 @@ function App() {
 
   return (
     <div className="App" >
-      <nav style={{ display: 'flex', flex: 1, justifyContent: 'space-evenly' }}>
+      <nav style={{ display: 'flex', flex: 1, justifyContent: 'flex-end', alignItems: 'center', height: '35px' }} className='text-purple-800 font-bold bg-slate-100'>
+        <div>
+
+        </div>
+        <div style={{display: 'flex', flex: 1, justifyContent: 'space-around'}}>
         <a href='https://github.com/VocalNight'>Github</a>
         <a href='#projects'>My Work</a>
         <a href='#contact'>Contact</a>
-        <a href=''>Download Resume</a>
+        <a href={cv} download="cv.pdf">
+          <button>Download Resume</button></a>
+        </div>
       </nav>
       <header className="App-header">
 
-        Hi i'm Victor, i'm a self-taught developer from Brazil. I like programming things and fixing bugs.
+        <div className='text-5xl'>
+         Hey, i'm <p style={{display: 'inline'}} className='text-purple-800'>Victor</p>
+        </div>
+        <div>
+        I'm a self-taught developer from Brazil. I like programming things and fixing bugs.
         I'm used to both front-end and back end, but really enjoy the back end side of things in systems.
-
+        </div>
+        <div>
         I also enjoy math and language learning. I'm fluent in english and know a bit of Japanese.
+        </div>
+
+        
       </header>
 
       <div id='projects'>

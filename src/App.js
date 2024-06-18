@@ -9,7 +9,7 @@ import Accordion from './Components/Accordion';
 function App() {
 
   return (
-    <div className="App" >
+    <div className="App bg-slate-200" >
       <nav style={{ display: 'flex', flex: 1, justifyContent: 'flex-end', alignItems: 'center', height: '35px' }} className='text-purple-800 font-bold bg-slate-100'>
         <div>
 
@@ -22,7 +22,7 @@ function App() {
           <button>Download Resume</button></a>
         </div>
       </nav>
-      <header className="App-header">
+      <header className="App-header bg-slate-500">
 
         <div className='text-5xl'>
          Hey, i'm <p style={{display: 'inline'}} className='text-purple-800'>Victor</p>
@@ -38,20 +38,20 @@ function App() {
         
       </header>
 
-      <div id='projects'>
+      <div id='projects' className='bg-slate-200'>
         Projects done:
       </div>
-      <div>
+      <div className='bg-slate-200'>
         CSharp
         Console projects i made while learning C#. I'm revisiting them and adding new things as i learn more about the language.
       </div>
 
-      <Accordion title="C# Projects" projects={consoleProjects} />
+      <Accordion  title="C# Projects" projects={consoleProjects} />
       <Accordion title="Angular Projects" projects={angularProjects} />
       <Accordion title="React Projects" projects={reactProjects} />
 
 
-      <div>
+      <div className='bg-slate-200'>
 
         Projects in the pipeline
 

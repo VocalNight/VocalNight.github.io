@@ -64,7 +64,7 @@ function App() {
 
       </div>
 
-      <div id='contact'>
+      <div id='contact' className='contactMe bg-slate-500'>
         Contact Me!
 
         E-mail

@@ -65,10 +65,12 @@ function App() {
       </div>
 
       <div id='contact' className='contactMe bg-slate-500'>
+        <div>
         Contact Me!
-
+        
         E-mail
         vocalebooks@gmail.com
+        </div>
 
       </div>
     </div>

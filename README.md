@@ -1,3 +1,3 @@
 ### Portfolio
 
-Just a simple portfolio project.
+My portfolio site. Made with React and tailwind.

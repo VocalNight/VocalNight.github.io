@@ -67,9 +67,13 @@ function App() {
       <div id='contact' className='contactMe bg-slate-500'>
         <div>
         Contact Me!
-        
+        </div>
+        <div>
         E-mail
         vocalebooks@gmail.com
+
+        Github
+        https://github.com/VocalNight
         </div>
 
       </div>

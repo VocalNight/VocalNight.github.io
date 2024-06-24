@@ -66,19 +66,19 @@ function App() {
 
       <div id='contact' className='contactMe bg-slate-500'>
         <div>
-            <p className='text-5xl text-purple-800'>
-              Contact Me!
-            </p>
+          <p className='text-5xl text-purple-800'>
+            Contact Me!
+          </p>
         </div>
         <div>
           <div className='contactInfo'>
-            <div>
-              E-mail
-              vocalebooks@gmail.com
+            <div className='contactLines'>
+              <div>E-mail:</div>
+              <div>vocalebooks@gmail.com</div>
             </div>
-            <div>
-              Github
-              https://github.com/VocalNight
+            <div className='contactLines'>
+              <div>Github:</div>
+              <div>https://github.com/VocalNight</div>
             </div>
           </div>
         </div>

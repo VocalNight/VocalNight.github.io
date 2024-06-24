@@ -14,28 +14,28 @@ function App() {
         <div>
 
         </div>
-        <div style={{display: 'flex', flex: 1, justifyContent: 'space-around'}}>
-        <a href='https://github.com/VocalNight'>Github</a>
-        <a href='#projects'>My Work</a>
-        <a href='#contact'>Contact</a>
-        <a href={cv} download="cv.pdf">
-          <button>Download Resume</button></a>
+        <div style={{ display: 'flex', flex: 1, justifyContent: 'space-around' }}>
+          <a href='https://github.com/VocalNight'>Github</a>
+          <a href='#projects'>My Work</a>
+          <a href='#contact'>Contact</a>
+          <a href={cv} download="cv.pdf">
+            <button>Download Resume</button></a>
         </div>
       </nav>
       <header className="App-header bg-slate-500">
 
         <div className='text-5xl'>
-         Hey, i'm <p style={{display: 'inline'}} className='text-purple-800'>Victor</p>
+          Hey, i'm <p style={{ display: 'inline' }} className='text-purple-800'>Victor</p>
         </div>
         <div>
-        I'm a self-taught developer from Brazil. I like programming things and fixing bugs.
-        I'm used to both front-end and back end, but really enjoy the back end side of things in systems.
+          I'm a self-taught developer from Brazil. I like programming things and fixing bugs.
+          I'm used to both front-end and back end, but really enjoy the back end side of things in systems.
         </div>
         <div>
-        I also enjoy math and language learning. I'm fluent in english and know a bit of Japanese.
+          I also enjoy math and language learning. I'm fluent in english and know a bit of Japanese.
         </div>
 
-        
+
       </header>
 
       <div id='projects' className='bg-slate-200'>
@@ -46,7 +46,7 @@ function App() {
         Console projects i made while learning C#. I'm revisiting them and adding new things as i learn more about the language.
       </div>
 
-      <Accordion  title="C# Projects" projects={consoleProjects} />
+      <Accordion title="C# Projects" projects={consoleProjects} />
       <Accordion title="Angular Projects" projects={angularProjects} />
       <Accordion title="React Projects" projects={reactProjects} />
 
@@ -66,14 +66,21 @@ function App() {
 
       <div id='contact' className='contactMe bg-slate-500'>
         <div>
-        Contact Me!
+            <p className='text-5xl text-purple-800'>
+              Contact Me!
+            </p>
         </div>
         <div>
-        E-mail
-        vocalebooks@gmail.com
-
-        Github
-        https://github.com/VocalNight
+          <div className='contactInfo'>
+            <div>
+              E-mail
+              vocalebooks@gmail.com
+            </div>
+            <div>
+              Github
+              https://github.com/VocalNight
+            </div>
+          </div>
         </div>
 
       </div>

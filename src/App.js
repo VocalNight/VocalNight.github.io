@@ -23,19 +23,20 @@ function App() {
         </div>
       </nav>
       <header className="App-header bg-slate-500">
-
+        <div>
         <div className='text-5xl'>
           Hey, i'm <p style={{ display: 'inline' }} className='text-purple-800'>Victor</p>
         </div>
         <div>
           I'm a self-taught developer from Brazil. I like programming things and fixing bugs.
           I'm used to both front-end and back end, but really enjoy the back end side of things in systems.
-        </div>
-        <div>
+
           I also enjoy math and language learning. I'm fluent in english and know a bit of Japanese.
         </div>
-
-
+        </div>
+        <div>
+          projects
+        </div>
       </header>
 
       <div id='projects' className='bg-slate-200'>
@@ -73,12 +74,13 @@ function App() {
         <div>
           <div className='contactInfo'>
             <div className='contactLines'>
-              <div>E-mail:</div>
-              <div>vocalebooks@gmail.com</div>
+              <div className='text-2xl'>
+                <p className='textDesc text-purple-800'>E-mail:</p> vocalebooks@gmail.com</div>
             </div>
             <div className='contactLines'>
-              <div>Github:</div>
-              <div>https://github.com/VocalNight</div>
+              <div className='text-2xl'>
+                <p className='textDesc text-purple-800'>Github: </p> 
+                https://github.com/VocalNight</div>
             </div>
           </div>
         </div>

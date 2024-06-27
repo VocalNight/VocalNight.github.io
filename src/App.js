@@ -1,5 +1,6 @@
 import './App.css';
 import cv from './cv.pdf'
+import { useEffect, useState } from 'react';
 import { consoleProjects } from './Projects/ConsoleProjects';
 import { angularProjects } from './Projects/AngularProjects';
 import { reactProjects } from './Projects/ReactProjects';
@@ -7,6 +8,16 @@ import { laravelProjects } from './Projects/LaravelProjects';
 import Accordion from './Components/Accordion';
 
 function App() {
+  const [projectList, setProjectList] = useState([]);
+
+  useEffect(() => {
+    ShowProjects([]);
+  }, [])
+
+  const ShowProjects = (projects) => {
+    setProjectList(projects);
+
+  }
 
   return (
     <div className="App bg-slate-200" >
@@ -24,6 +35,7 @@ function App() {
       </nav>
       <div className="App-header bg-slate-500">
         <div className='mainGrid'>
+         {projectList.length == 0 && 
           <div className='headerDesc'>
             <div className='text-5xl'>
               Hey, i'm <p style={{ display: 'inline' }} className='text-purple-800'>Victor</p>
@@ -34,13 +46,13 @@ function App() {
 
               I also enjoy math and language learning. I'm fluent in english and know a bit of Japanese.
             </div>
-          </div>
+          </div>}
           <div className='headerProjects'>
             <h2>Projects</h2>
-            <a>C# projects</a>
-            <a href="">Angular projects</a>
-            <a href="">React Projects</a>
-            <a href="">Other projects</a>
+            <button onClick={() => ShowProjects(consoleProjects)}>C# projects</button>
+            <button onClick={() => ShowProjects(angularProjects)}>Angular projects</button>
+            <button onClick={() => ShowProjects(reactProjects)}>React Projects</button>
+            <button onClick={() => ShowProjects(laravelProjects)}>Other projects</button>
           </div>
         </div>
 

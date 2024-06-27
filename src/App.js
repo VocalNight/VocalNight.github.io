@@ -6,6 +6,8 @@ import { angularProjects } from './Projects/AngularProjects';
 import { reactProjects } from './Projects/ReactProjects';
 import { laravelProjects } from './Projects/LaravelProjects';
 import Accordion from './Components/Accordion';
+import PortfolioAbout from './Components/PortfolioAbout';
+import ProjectView from './Components/ProjectView';
 
 function App() {
   const [projectList, setProjectList] = useState([]);
@@ -36,17 +38,10 @@ function App() {
       <div className="App-header bg-slate-500">
         <div className='mainGrid'>
          {projectList.length == 0 && 
-          <div className='headerDesc'>
-            <div className='text-5xl'>
-              Hey, i'm <p style={{ display: 'inline' }} className='text-purple-800'>Victor</p>
-            </div>
-            <div>
-              I'm a self-taught developer from Brazil. I like programming things and fixing bugs.
-              I'm used to both front-end and back end, but really enjoy the back end side of things in systems.
-
-              I also enjoy math and language learning. I'm fluent in english and know a bit of Japanese.
-            </div>
-          </div>}
+          <PortfolioAbout></PortfolioAbout>
+          }
+          {projectList.length > 0 &&
+          <ProjectView projects={projectList}></ProjectView>}
           <div className='headerProjects'>
             <h2>Projects</h2>
             <button onClick={() => ShowProjects(consoleProjects)}>C# projects</button>

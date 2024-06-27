@@ -1,3 +1,5 @@
+import ProjectCard from './ProjectCard';
+
 export default function ProjectView({projects}) {
 
     return(

@@ -37,6 +37,8 @@
   
 }
 
+
+
 .App-header {
   min-height: 100vh;
   display: flex;
@@ -44,18 +46,19 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
   border: 1px solid black;
 }
 
 .headerDesc {
+  font-size: calc(10px + 2vmin);
   border: 1px solid black;
   min-height: 50vh;
 }
 
 .headerProjects {
   border: 1px solid black;
+  font-size: calc(10px + 2vmin);
   flex-grow: 3;
 }
 

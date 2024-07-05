@@ -1,9 +1,5 @@
 export let consoleProjects = [
     {
-        title: "Math Game",
-        description: "A simple console program that tests your math knolowdge"
-    },
-    {
         title: "Calculator",
         description: "A small calculator in C#"
     },

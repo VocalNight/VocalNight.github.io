@@ -43,7 +43,7 @@ function App() {
           {projectList.length > 0 &&
           <ProjectView projects={projectList}></ProjectView>}
           <div className='headerProjects'>
-            <h2>Projects</h2>
+          <button onClick={() => ShowProjects([])}>About</button>
             <button onClick={() => ShowProjects(consoleProjects)}>C# projects</button>
             <button onClick={() => ShowProjects(angularProjects)}>Angular projects</button>
             <button onClick={() => ShowProjects(reactProjects)}>React Projects</button>

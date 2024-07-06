@@ -22,8 +22,8 @@ function App() {
   }
 
   return (
-    <div className="App bg-slate-200" >
-      <nav style={{ display: 'flex', flex: 1, justifyContent: 'flex-end', alignItems: 'center', height: '35px' }} className='text-purple-800 font-bold bg-slate-100'>
+    <div className="App" >
+      <nav style={{ display: 'flex', flex: 1, justifyContent: 'flex-end', alignItems: 'center', height: '35px' }} className='text-purple-800 font-bold '>
         <div>
 
         </div>
@@ -35,8 +35,8 @@ function App() {
             <button>Download Resume</button></a>
         </div>
       </nav>
-      <div className="App-header bg-slate-500">
-        <div className='mainGrid'>
+      <div className="App-header bg-gray-500">
+        <div className='mainGrid bg-gray-900'>
          {projectList.length == 0 && 
           <PortfolioAbout></PortfolioAbout>
           }
@@ -53,7 +53,7 @@ function App() {
 
       </div>
 
-      <div id='projects' className='bg-slate-200'>
+      {/*<div id='projects' className='bg-slate-200'>
         Projects done:
       </div>
       <div className='bg-slate-200'>
@@ -66,7 +66,7 @@ function App() {
       <Accordion title="React Projects" projects={reactProjects} />
 
 
-      <div className='bg-slate-200'>
+        <div className='bg-slate-200'>
 
         Projects in the pipeline
 
@@ -99,7 +99,7 @@ function App() {
           </div>
         </div>
 
-      </div>
+      </div>  */}
     </div>
   );
 }

@@ -15,9 +15,10 @@
 
 .mainGrid {
   display: grid;
-  border: 1px solid black;
+  border: 3px solid rgb(61, 28, 1);
+  border-radius: 5px;
   min-height: 100%;
-  width: 100%;
+  width: 95%;
   grid-template-columns: 80% 20%;
   grid-template-rows: 50% 50%;
 }
@@ -53,7 +54,11 @@
 .headerDesc {
   font-size: calc(10px + 2vmin);
   border: 1px solid black;
-  min-height: 50vh;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .headerProjects {

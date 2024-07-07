@@ -5,7 +5,6 @@ import { consoleProjects } from './Projects/ConsoleProjects';
 import { angularProjects } from './Projects/AngularProjects';
 import { reactProjects } from './Projects/ReactProjects';
 import { laravelProjects } from './Projects/LaravelProjects';
-import Accordion from './Components/Accordion';
 import PortfolioAbout from './Components/PortfolioAbout';
 import ProjectView from './Components/ProjectView';
 
@@ -35,8 +34,8 @@ function App() {
             <button>Download Resume</button></a>
         </div>
       </nav>
-      <div className="App-header bg-gray-500">
-        <div className='mainGrid bg-gray-900'>
+      <div className="App-header">
+        <div className='mainGrid bg-black'>
          {projectList.length == 0 && 
           <PortfolioAbout></PortfolioAbout>
           }

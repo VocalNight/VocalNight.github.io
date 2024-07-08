@@ -17,7 +17,6 @@
   display: grid;
   border: 3px solid rgb(61, 28, 1);
   border-radius: 5px;
-  min-height: 100%;
   width: 95%;
   grid-template-columns: 80% 20%;
   grid-template-rows: 50% 50%;
@@ -36,6 +35,14 @@
   display: flex;
   flex-direction: column;
   
+}
+
+.ContactInfo {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  font-size: calc(10px + 2vmin);
+  display: flex;
+  flex-direction: column;
 }
 
 .cards {
@@ -71,7 +78,7 @@
 .headerProjects {
   border: 1px solid black;
   font-size: calc(10px + 2vmin);
-  flex-grow: 3;
+  
 }
 
 .App-link {

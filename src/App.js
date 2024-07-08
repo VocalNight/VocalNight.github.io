@@ -22,18 +22,17 @@ function App() {
 
   return (
     <div className="App" >
-      <nav style={{ display: 'flex', flex: 1, justifyContent: 'flex-end', alignItems: 'center', height: '35px' }} className='text-purple-800 font-bold '>
+      {/*<nav style={{ display: 'flex', flex: 1, justifyContent: 'flex-end', alignItems: 'center', height: '35px' }} className='text-purple-800 font-bold '>
         <div>
 
         </div>
         <div style={{ display: 'flex', flex: 1, justifyContent: 'space-around' }}>
           <a href='https://github.com/VocalNight'>Github</a>
-          <a href='#projects'>My Work</a>
           <a href='#contact'>Contact</a>
           <a href={cv} download="cv.pdf">
             <button>Download Resume</button></a>
         </div>
-      </nav>
+      </nav>*/}
       <div className="App-header">
         <div className='mainGrid bg-black'>
          {projectList.length == 0 && 
@@ -42,11 +41,19 @@ function App() {
           {projectList.length > 0 &&
           <ProjectView projects={projectList}></ProjectView>}
           <div className='headerProjects'>
-          <button onClick={() => ShowProjects([])}>About</button>
+            <button onClick={() => ShowProjects([])}>About</button>
             <button onClick={() => ShowProjects(consoleProjects)}>C# projects</button>
             <button onClick={() => ShowProjects(angularProjects)}>Angular projects</button>
             <button onClick={() => ShowProjects(reactProjects)}>React Projects</button>
             <button onClick={() => ShowProjects(laravelProjects)}>Other projects</button>
+          </div>
+          <div className='ContactInfo'>
+            <div>Contact me!</div>
+            <hr style={{width:"50%", marginLeft:"auto", marginRight:"auto"}}></hr>
+            <a href={cv} download="cv.pdf">
+            <button>Download Resume</button></a>
+            <a href='https://github.com/VocalNight' target="_blank">Github</a>
+            <div>Vocalebooks@gmail.com</div>
           </div>
         </div>
 

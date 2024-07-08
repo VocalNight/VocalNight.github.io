@@ -5,6 +5,7 @@ export default function PortfolioAbout() {
             <div className='text-5xl'>
               Hey, i'm <p style={{ display: 'inline' }} className='text-purple-800'>Victor</p>
             </div>
+            <br></br>
             <div>
               I'm a self-taught developer from Brazil. I like programming things and fixing bugs.
               I'm used to both front-end and back end, but really enjoy the back end side of things in systems.

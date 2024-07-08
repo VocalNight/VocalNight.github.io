@@ -52,6 +52,7 @@
   box-shadow: 2px 2px #5b5c60;
 }
 
+
 .App-header {
   min-height: 100vh;
   display: flex;
@@ -68,6 +69,8 @@
   font-size: calc(10px + 2vmin);
   border: 1px solid black;
   min-height: 500px;
+  width: 90%;
+  padding: 10px;
   display: flex;
   color: #c4c4c4;
   flex-direction: column;

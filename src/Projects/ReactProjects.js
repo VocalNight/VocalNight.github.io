@@ -13,5 +13,6 @@ export let reactProjects = [
         title: "Crud project",
         link: "https://github.com/VocalNight/Crud-React",
         description: "Project made with tailwind and react. Backend in C#. It's generic so far and needs more tests."
+     },
     
 ]

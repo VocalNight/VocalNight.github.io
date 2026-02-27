@@ -8,5 +8,11 @@ export let angularProjects = [
         title: "Sleep Tracker",
         link: "https://github.com/VocalNight/SleepTracker",
         description: "A tracker using Angular material."
+    },
+    {   
+        title: "Brewery Project",
+        link: "https://github.com/VocalNight/CodeReviews.Challenges.BreweryAPI",
+        description: "A crud simulating a small brewery system."
+    
     }
 ]
